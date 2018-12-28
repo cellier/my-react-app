@@ -16,7 +16,7 @@ const HeaderGroup = styled.div``
 const Header = ({ siteTitle }) => (
   <HeaderNav>
     <HeaderGroup>
-      <Link to="/"><img src={logo} height="16px"/></Link>
+      <Link to="/"><img src={logo} alt="" height="16px"/></Link>
       <Link to="/features">Features</Link>
       <Link to="/solutions">Solutions</Link>
       <Link to="/pricing">Pricing</Link>
