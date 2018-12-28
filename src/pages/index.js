@@ -7,8 +7,11 @@ import SEO from '../components/seo'
 import '../components/layout.css'
 import styled from 'styled-components'
 import Header from '../components/header'
+import SecondSection from '../components/second-section'
 
-const Hero = styled.div``
+const Hero = styled.div`
+  margin-bottom: -64px;
+`
 const HeroGroup = styled.div`
   margin: 0 auto;
   max-width: 720px;
@@ -50,9 +53,10 @@ const HeroGroup = styled.div`
     background: rgba(24,70,194,1);
     box-shadow: 0px 1px 2px rgba(40,96,245, 0.9);
   }
+  img {
+    margin-top: 80px;
+  }
 `
-
-
 
 
 
@@ -69,10 +73,11 @@ with your teams.</h1>
       <Image />
     </div> */}
       <Link to="/page-2/">Get Started</Link>
+      <img src={require('../images/first-img.png')} alt="" />
       </HeroGroup>
     </Hero>
-
-
+    <hr/>
+    <SecondSection />
   </Layout>
 )
 
